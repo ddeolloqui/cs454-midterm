@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+    image: cs454-midterm:1.0
+    environment:
+      PORT: "8080"
+      SERVICE_NAME: "cs454-midterm"
+      MESSAGE: "Hello from Docker Compose"
+    ports:
+      - "8080:8080"
